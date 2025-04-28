@@ -1,1 +1,99 @@
-@import "tailwindcss";
+.App {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('/assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .container-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4); /* Darkened content background */
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #fff; /* Light color for better contrast */
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #d8d8d8;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.205);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-button:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .steam-button {
+    background-color: #171a21;
+  }
+  
+  .discord-button {
+    background-color: #7289da;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container-content {
+      padding: 15px 30px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .social-button {
+      padding: 8px 16px; /* Smaller padding for mobile */
+      font-size: 0.9rem;
+    }
+  }
+  
