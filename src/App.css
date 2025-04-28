@@ -24,7 +24,7 @@
   
   .container-content {
     text-align: center;
-    background: rgba(0, 0, 0, 0.4); /* Darkened content background */
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     padding: 20px 40px;
     border-radius: 8px;
@@ -33,7 +33,7 @@
   
   h1 {
     font-size: 2.5rem;
-    color: #fff; /* Light color for better contrast */
+    color: #fff;
     margin-bottom: 15px;
   }
   
@@ -92,7 +92,7 @@
     }
   
     .social-button {
-      padding: 8px 16px; /* Smaller padding for mobile */
+      padding: 8px 16px;
       font-size: 0.9rem;
     }
   }

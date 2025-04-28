@@ -13,7 +13,7 @@ const App: React.FC = () => {
     setShowJumpscar(true);
     setTimeout(() => {
       setShowJumpscar(false);
-    }, 3000); // Po 3 sekundach schowaj jumpscare
+    }, 3000);
   };
 
   return (
